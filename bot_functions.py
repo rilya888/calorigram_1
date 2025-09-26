@@ -1009,7 +1009,7 @@ async def profile_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 🎯 Цель: {goal_emoji} {goal_text}
 📊 Расчетная норма: {user_data[8]} ккал
 🎯 Целевая норма: {target_calories} ккал
-📅 Дата регистрации: {user_data[9]}
+📅 Дата регистрации: {user_data[16] if len(user_data) > 16 else 'Неизвестно'}
 
 {subscription_text}
         """
@@ -1665,19 +1665,19 @@ async def handle_profile_callback(update: Update, context: ContextTypes.DEFAULT_
     subscription_text = ""
     if subscription_info['is_active']:
         if subscription_info['type'] == 'trial':
-            subscription_text = f"🆓 **Триальный период**\nДоступен до: {subscription_info['expires_at']}"
+            subscription_text = f"🆓 <b>Триальный период</b>\nДоступен до: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium':
             if subscription_info['expires_at']:
-                subscription_text = f"⭐ **Премиум подписка**\nДействует до: {subscription_info['expires_at']}"
+                subscription_text = f"⭐ <b>Премиум подписка</b>\nДействует до: {subscription_info['expires_at']}"
             else:
-                subscription_text = "⭐ **Премиум подписка**\nБез ограничений"
+                subscription_text = "⭐ <b>Премиум подписка</b>\nБез ограничений"
     else:
         if subscription_info['type'] == 'trial_expired':
-            subscription_text = f"❌ **Триальный период истек**\nИстек: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Триальный период истек</b>\nИстек: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium_expired':
-            subscription_text = f"❌ **Премиум подписка истекла**\nИстекла: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Премиум подписка истекла</b>\nИстекла: {subscription_info['expires_at']}"
         else:
-            subscription_text = "❌ **Нет активной подписки**"
+            subscription_text = "❌ <b>Нет активной подписки</b>"
     
     # Получаем информацию о цели и целевой норме калорий
     goal = user_data[9] if len(user_data) > 9 else 'maintain'
@@ -2924,26 +2924,30 @@ async def handle_admin_manage_subscription_callback(update: Update, context: Con
     subscription_text = ""
     if subscription_info['is_active']:
         if subscription_info['type'] == 'trial':
-            subscription_text = f"🆓 **Триальный период**\nДоступен до: {subscription_info['expires_at']}"
+            subscription_text = f"🆓 <b>Триальный период</b>\nДоступен до: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium':
             if subscription_info['expires_at']:
-                subscription_text = f"⭐ **Премиум подписка**\nДействует до: {subscription_info['expires_at']}"
+                subscription_text = f"⭐ <b>Премиум подписка</b>\nДействует до: {subscription_info['expires_at']}"
             else:
-                subscription_text = "⭐ **Премиум подписка**\nБез ограничений"
+                subscription_text = "⭐ <b>Премиум подписка</b>\nБез ограничений"
     else:
         if subscription_info['type'] == 'trial_expired':
-            subscription_text = f"❌ **Триальный период истек**\nИстек: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Триальный период истек</b>\nИстек: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium_expired':
-            subscription_text = f"❌ **Премиум подписка истекла**\nИстекла: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Премиум подписка истекла</b>\nИстекла: {subscription_info['expires_at']}"
         else:
-            subscription_text = "❌ **Нет активной подписки**"
+            subscription_text = "❌ <b>Нет активной подписки</b>"
+    
+    # Экранируем специальные символы для Markdown
+    safe_name = str(user_data[2]).replace('_', '\\_').replace('*', '\\*').replace('[', '\\[').replace('`', '\\`')
+    safe_date = str(user_data[16] if len(user_data) > 16 else 'Неизвестно').replace('_', '\\_').replace('*', '\\*').replace('[', '\\[').replace('`', '\\`')
     
     manage_text = f"""
-👤 **Управление подпиской пользователя**
+👤 <b>Управление подпиской пользователя</b>
 
-📝 **Имя:** {user_data[2]}
-🆔 **Telegram ID:** {telegram_id}
-📅 **Дата регистрации:** {user_data[9]}
+📝 <b>Имя:</b> {safe_name}
+🆔 <b>Telegram ID:</b> {telegram_id}
+📅 <b>Дата регистрации:</b> {safe_date}
 
 {subscription_text}
 
@@ -3146,26 +3150,30 @@ async def show_admin_manage_subscription_menu(update: Update, context: ContextTy
     subscription_text = ""
     if subscription_info['is_active']:
         if subscription_info['type'] == 'trial':
-            subscription_text = f"🆓 **Триальный период**\nДоступен до: {subscription_info['expires_at']}"
+            subscription_text = f"🆓 <b>Триальный период</b>\nДоступен до: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium':
             if subscription_info['expires_at']:
-                subscription_text = f"⭐ **Премиум подписка**\nДействует до: {subscription_info['expires_at']}"
+                subscription_text = f"⭐ <b>Премиум подписка</b>\nДействует до: {subscription_info['expires_at']}"
             else:
-                subscription_text = "⭐ **Премиум подписка**\nБез ограничений"
+                subscription_text = "⭐ <b>Премиум подписка</b>\nБез ограничений"
     else:
         if subscription_info['type'] == 'trial_expired':
-            subscription_text = f"❌ **Триальный период истек**\nИстек: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Триальный период истек</b>\nИстек: {subscription_info['expires_at']}"
         elif subscription_info['type'] == 'premium_expired':
-            subscription_text = f"❌ **Премиум подписка истекла**\nИстекла: {subscription_info['expires_at']}"
+            subscription_text = f"❌ <b>Премиум подписка истекла</b>\nИстекла: {subscription_info['expires_at']}"
         else:
-            subscription_text = "❌ **Нет активной подписки**"
+            subscription_text = "❌ <b>Нет активной подписки</b>"
+    
+    # Экранируем специальные символы для Markdown
+    safe_name = str(user_data[2]).replace('_', '\\_').replace('*', '\\*').replace('[', '\\[').replace('`', '\\`')
+    safe_date = str(user_data[16] if len(user_data) > 16 else 'Неизвестно').replace('_', '\\_').replace('*', '\\*').replace('[', '\\[').replace('`', '\\`')
     
     manage_text = f"""
-👤 **Управление подпиской пользователя**
+👤 <b>Управление подпиской пользователя</b>
 
-📝 **Имя:** {user_data[2]}
-🆔 **Telegram ID:** {telegram_id}
-📅 **Дата регистрации:** {user_data[9]}
+📝 <b>Имя:</b> {safe_name}
+🆔 <b>Telegram ID:</b> {telegram_id}
+📅 <b>Дата регистрации:</b> {safe_date}
 
 {subscription_text}
 
@@ -3183,7 +3191,7 @@ async def show_admin_manage_subscription_menu(update: Update, context: ContextTy
     await update.message.reply_text(
         manage_text,
         reply_markup=reply_markup,
-        parse_mode='Markdown'
+        parse_mode='HTML'
     )
 
 # ==================== ФУНКЦИИ "УЗНАТЬ КАЛОРИИ" (БЕЗ СОХРАНЕНИЯ) ====================
