@@ -1,0 +1,15 @@
+# Telegram Bot Configuration
+BOT_TOKEN=your_bot_token_here
+
+# API Configuration
+NEBUIS_API_KEY=your_nebius_api_key_here
+BASE_URL=https://api.studio.nebius.ai/v1/
+
+# Database Configuration
+DATABASE_PATH=users.db
+
+# Test Mode (True/False)
+TEST_MODE=True
+
+# Admin IDs (comma-separated)
+ADMIN_IDS=160308091

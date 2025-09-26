@@ -1,0 +1,10 @@
+python-telegram-bot==21.7
+aiohttp==3.9.5
+aiofiles==23.2.1
+python-dotenv==1.0.1
+pytz==2024.1
+# Дополнительные зависимости для оптимизации
+cryptography>=41.0.0
+asyncio-throttle>=1.0.0
+# Планировщик задач для сброса счетчиков
+APScheduler==3.10.4
