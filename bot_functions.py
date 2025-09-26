@@ -990,8 +990,8 @@ async def profile_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 subscription_text = "❌ Нет активной подписки"
         
         # Получаем информацию о цели и целевой норме калорий
-        goal = user_data[13] if len(user_data) > 13 else 'maintain'
-        target_calories = int(user_data[14]) if len(user_data) > 14 and user_data[14] else int(user_data[8])
+        goal = user_data[9] if len(user_data) > 9 else 'maintain'
+        target_calories = int(user_data[10]) if len(user_data) > 10 and user_data[10] else int(user_data[8])
         
         # Формируем текст о цели
         goal_text = GOALS.get(goal, 'Держать себя в форме')
@@ -1680,8 +1680,16 @@ async def handle_profile_callback(update: Update, context: ContextTypes.DEFAULT_
             subscription_text = "❌ **Нет активной подписки**"
     
     # Получаем информацию о цели и целевой норме калорий
-    goal = user_data[13] if len(user_data) > 13 else 'maintain'
-    target_calories = int(user_data[14]) if len(user_data) > 14 and user_data[14] else int(user_data[8])
+    goal = user_data[9] if len(user_data) > 9 else 'maintain'
+    
+    # Безопасное получение целевых калорий
+    try:
+        if len(user_data) > 10 and user_data[10] and str(user_data[10]).isdigit():
+            target_calories = int(user_data[10])
+        else:
+            target_calories = int(user_data[8]) if user_data[8] else 0
+    except (ValueError, TypeError):
+        target_calories = int(user_data[8]) if user_data[8] else 0
     
     # Формируем текст о цели
     goal_text = GOALS.get(goal, 'Держать себя в форме')
@@ -1699,7 +1707,7 @@ async def handle_profile_callback(update: Update, context: ContextTypes.DEFAULT_
 🎯 **Цель:** {goal_emoji} {goal_text}
 📊 **Расчетная норма:** {user_data[8]} ккал
 🎯 **Целевая норма:** {target_calories} ккал
-📅 **Дата регистрации:** {user_data[9]}
+📅 **Дата регистрации:** {user_data[16] if len(user_data) > 16 else 'Неизвестно'}
 
 {subscription_text}
     """
@@ -3800,8 +3808,15 @@ async def handle_stats_today_callback(update: Update, context: ContextTypes.DEFA
                 stats_text += f"\n📊 **Процент от суточной нормы:** {percentage}%"
                 
                 # Добавляем процент от цели
-                goal = user_data[13] if len(user_data) > 13 else 'maintain'
-                target_calories = int(user_data[14]) if len(user_data) > 14 and user_data[14] else daily_norm
+                goal = user_data[9] if len(user_data) > 9 else 'maintain'
+                # Безопасное получение целевых калорий
+                try:
+                    if len(user_data) > 10 and user_data[10] and str(user_data[10]).isdigit():
+                        target_calories = int(user_data[10])
+                    else:
+                        target_calories = daily_norm
+                except (ValueError, TypeError):
+                    target_calories = daily_norm
                 
                 if target_calories > 0:
                     goal_percentage = round((total_calories / target_calories) * 100, 1)
@@ -3886,8 +3901,15 @@ async def handle_stats_yesterday_callback(update: Update, context: ContextTypes.
                 stats_text += f"\n📊 **Процент от суточной нормы:** {percentage}%"
                 
                 # Добавляем процент от цели
-                goal = user_data[13] if len(user_data) > 13 else 'maintain'
-                target_calories = int(user_data[14]) if len(user_data) > 14 and user_data[14] else daily_norm
+                goal = user_data[9] if len(user_data) > 9 else 'maintain'
+                # Безопасное получение целевых калорий
+                try:
+                    if len(user_data) > 10 and user_data[10] and str(user_data[10]).isdigit():
+                        target_calories = int(user_data[10])
+                    else:
+                        target_calories = daily_norm
+                except (ValueError, TypeError):
+                    target_calories = daily_norm
                 
                 if target_calories > 0:
                     goal_percentage = round((total_calories / target_calories) * 100, 1)
@@ -3967,8 +3989,15 @@ async def handle_stats_week_callback(update: Update, context: ContextTypes.DEFAU
                 stats_text += f"\n📊 **Процент от недельной нормы:** {percentage}%"
                 
                 # Добавляем процент от цели
-                goal = user_data[10] if len(user_data) > 10 else 'maintain'
-                target_calories = user_data[11] if len(user_data) > 11 else daily_norm
+                goal = user_data[9] if len(user_data) > 9 else 'maintain'
+                # Безопасное получение целевых калорий
+                try:
+                    if len(user_data) > 10 and user_data[10] and str(user_data[10]).isdigit():
+                        target_calories = int(user_data[10])
+                    else:
+                        target_calories = daily_norm
+                except (ValueError, TypeError):
+                    target_calories = daily_norm
                 weekly_target = target_calories * 7
                 
                 if weekly_target > 0:
