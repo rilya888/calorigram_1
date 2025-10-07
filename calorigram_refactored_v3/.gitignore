@@ -1,0 +1,15 @@
+.env
+logs/
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+bot_refact_*.tar.gz
+bot_9_backup.tar.gz
+bot_voice_implementation_*.tar.gz
+users.db
+
+
+# macOS
+.DS_Store
+._*
