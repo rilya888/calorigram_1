@@ -741,7 +741,14 @@ async def handle_photo_with_text(update: Update, context: ContextTypes.DEFAULT_T
         # Скачиваем фото
         photo_file = await context.bot.get_file(photo.file_id)
         
-        async with aiohttp.ClientSession() as session:
+        # Создаем SSL контекст с мягкими настройками
+        import ssl
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+        
+        connector = aiohttp.TCPConnector(ssl=ssl_context)
+        async with aiohttp.ClientSession(connector=connector) as session:
             async with session.get(photo_file.file_path) as response:
                 if response.status != 200:
                     await processing_msg.edit_text(
