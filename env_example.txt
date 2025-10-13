@@ -1,0 +1,24 @@
+# Telegram Bot Configuration
+BOT_TOKEN=your_bot_token_here
+
+# OpenAI API Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+BASE_URL=https://api.openai.com/v1/
+
+# OpenAI Models (опционально - если не указаны, используются значения по умолчанию)
+OPENAI_MODEL=gpt-4o-mini
+OPENAI_VISION_MODEL=gpt-4o-mini
+OPENAI_WHISPER_MODEL=whisper-1
+
+# Database Configuration
+DATABASE_PATH=users.db
+
+# Test Mode (True/False)
+TEST_MODE=False
+
+# Admin IDs (comma-separated)
+ADMIN_IDS=160308091
+
+# Legacy API Keys (для совместимости, можно не указывать)
+# NEBUIS_API_KEY=your_nebius_api_key_here
+# ASSEMBLYAI_API_KEY=your_assemblyai_api_key_here
