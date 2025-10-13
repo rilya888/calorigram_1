@@ -401,7 +401,14 @@ class APIClient:
                 "temperature": 0.3
             }
             
-            async with aiohttp.ClientSession() as session:
+            # Создаем SSL контекст
+            import ssl
+            ssl_context = ssl.create_default_context()
+            ssl_context.check_hostname = False
+            ssl_context.verify_mode = ssl.CERT_NONE
+            
+            connector = aiohttp.TCPConnector(ssl=ssl_context)
+            async with aiohttp.ClientSession(connector=connector) as session:
                 async with session.post(
                     f"{self.base_url}chat/completions",
                     headers=headers,
