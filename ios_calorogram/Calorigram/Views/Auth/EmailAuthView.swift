@@ -13,7 +13,14 @@ struct EmailAuthView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var name = ""
-    
+
+    // Проверка валидности email
+    private var isEmailValid: Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
+    }
+
     var body: some View {
         VStack(spacing: 20) {
             // Поля ввода
@@ -32,7 +39,28 @@ struct EmailAuthView: View {
                 SecureField("Пароль", text: $password)
                     .textFieldStyle(.roundedBorder)
             }
-            
+
+            // Подсказки по требованиям
+            VStack(alignment: .leading, spacing: 4) {
+                if !email.isEmpty && !isEmailValid {
+                    Text("Введите корректный email адрес")
+                        .foregroundColor(.red)
+                        .font(.caption)
+                }
+                if !password.isEmpty && password.count < 6 {
+                    Text("Пароль должен содержать минимум 6 символов")
+                        .foregroundColor(.red)
+                        .font(.caption)
+                }
+                if !isLoginMode && !name.isEmpty && name.count < 2 {
+                    Text("Имя должно содержать минимум 2 символа")
+                        .foregroundColor(.red)
+                        .font(.caption)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 20)
+
             // Кнопка действия
             Button(action: {
                 Task {
@@ -54,7 +82,7 @@ struct EmailAuthView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            .disabled(authViewModel.isLoading || email.isEmpty || password.isEmpty || (!isLoginMode && name.isEmpty))
+            .disabled(authViewModel.isLoading || !isEmailValid || password.count < 6 || (!isLoginMode && name.count < 2))
             
             // Ошибка
             if let errorMessage = authViewModel.errorMessage {
