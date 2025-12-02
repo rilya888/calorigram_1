@@ -1,0 +1,30 @@
+{
+  "/Users/mac/ios_calorogram/Calorigram/Models/Statistics.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Statistics.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Statistics.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Statistics.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Statistics.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Statistics.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/ViewModels/ProfileViewModel.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileViewModel.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileViewModel.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileViewModel.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileViewModel.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Modals/RemindersSettingsModal.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/RemindersSettingsModal.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/RemindersSettingsModal.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/RemindersSettingsModal.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/RemindersSettingsModal.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/RemindersSettingsModal.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Profile/ProfileView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ProfileView.swiftdeps"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "/Users/mac/ios_calorogram/Calorigram/App/CalorigramApp.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/CalorigramApp.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/CalorigramApp.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/CalorigramApp.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/CalorigramApp.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/CalorigramApp.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/App/ContentView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ContentView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/ContentView.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Utils/Constants.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Constants.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Constants.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Constants.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/Constants.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Diary/DiaryView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/DiaryView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/DiaryView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/DiaryView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/DiaryView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/DiaryView.swiftdeps"
+  }
+}

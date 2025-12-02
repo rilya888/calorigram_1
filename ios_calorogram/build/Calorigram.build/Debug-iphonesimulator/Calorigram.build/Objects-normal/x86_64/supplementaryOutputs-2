@@ -1,0 +1,37 @@
+{
+  "/Users/mac/ios_calorogram/Calorigram/Services/APIService.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/APIService.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/APIService.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/APIService.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/APIService.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/APIService.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/ViewModels/AddMealViewModel.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealViewModel.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealViewModel.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealViewModel.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealViewModel.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/ViewModels/AnalysisViewModel.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisViewModel.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisViewModel.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisViewModel.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisViewModel.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Analysis/AnalysisView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AnalysisView.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Modals/AddMealModal.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealModal.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealModal.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealModal.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealModal.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/x86_64/AddMealModal.swiftdeps"
+  }
+}

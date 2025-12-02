@@ -1,0 +1,30 @@
+{
+  "/Users/mac/ios_calorogram/Calorigram/Models/Meal.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/Meal.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/Meal.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/Meal.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/Meal.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/Meal.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Services/NotificationService.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/NotificationService.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/NotificationService.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Auth/PhoneAuthView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/PhoneAuthView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/PhoneAuthView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/PhoneAuthView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/PhoneAuthView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/PhoneAuthView.swiftdeps"
+  },
+  "/Users/mac/ios_calorogram/Calorigram/Views/Onboarding/OnboardingView.swift" : {
+    "const-values" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/OnboardingView.dia",
+    "object" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mac/ios_calorogram/build/Calorigram.build/Debug-iphonesimulator/Calorigram.build/Objects-normal/arm64/OnboardingView.swiftdeps"
+  }
+}

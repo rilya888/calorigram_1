@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019296340F364623F7F0EAB4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F2BAD4F0F5011AB00BEE6 /* AuthService.swift */; };
+		0221B69176EA53A8E2CF3CE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA9E10DE5AE0FFC47908E3 /* ContentView.swift */; };
+		028A24DC263685E1C0E07F86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4899B6AF59C8CFCF8A589AD1 /* Constants.swift */; };
+		107CD9B901B6614327D3D38A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62882F18B2283895FC0CB3C6 /* StatsView.swift */; };
+		14A34CE13A3A1E60C2C95947 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05D59776C716E811FFCA42A /* Meal.swift */; };
+		180C8EC9AD50B0EE7EF76A6E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D205D4B4FCD4241890255AE /* EditProfileView.swift */; };
+		23BF05316DFDDCCFACE85FD7 /* AppleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108D6B83A52D7C67EFAB3C1 /* AppleAuthService.swift */; };
+		2B1C899FAC18AFA97B228EA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6FC9353B89938B79E632F /* HomeViewModel.swift */; };
+		2D0E30183B77BEE87DCD68D9 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AA18126AFF5A00180F414 /* APIServiceTests.swift */; };
+		344EC87CF2A4A28ACA6F8887 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F83EBCE02B17AE47D8509 /* DiaryView.swift */; };
+		48813FAE30526B1AABE0407B /* EmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCA90B2C81D826643818442 /* EmailAuthView.swift */; };
+		48FD74A6CD55010EEA591462 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4368443C01E8D87E71F3 /* AnalysisView.swift */; };
+		5125B2008AFB02A00D260982 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D767B9CCF950E1DC6DAA9FA /* StatsViewModel.swift */; };
+		61D8B2258F11B39139D67884 /* AppleAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F6C11FD97E0C50190EB2B1 /* AppleAuthView.swift */; };
+		62FB6EE50082FDDB6677477E /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8C5FF3A4B0422DF3CA9B0 /* Subscription.swift */; };
+		63A6612561C615F3C3111FA6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516716E569B6AC91CBC66FC1 /* MainTabView.swift */; };
+		654A2CD2DAFDF5CDECBA7252 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F2F3BDBDEC969E2A20E23 /* OnboardingView.swift */; };
+		6A1BA20CEF635A080A08772D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3546993531E562E78A19E /* APIService.swift */; };
+		6B94B7070F5436587C0F4724 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8231F00ACB2BCF16EB7F239 /* AuthViewModel.swift */; };
+		72EFD903E7760CD8AECEBA6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12756B55CB7B59FA958129 /* Extensions.swift */; };
+		73B5979F0F280BE1C4F9A6DD /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031B9B3DD68D33CDC48A600 /* HomeViewModelTests.swift */; };
+		81CE15409B700C8DC24F9C9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C38EF10AB41570699F1B3 /* HomeView.swift */; };
+		8CCBE00D63EAEAE6D9574E78 /* AddMealModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF5356CFCF114C63ABF027 /* AddMealModal.swift */; };
+		926FB4893B7716C753CA35BE /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003171EC86BEB3CE12A2553 /* KeychainService.swift */; };
+		9A56A542AE27AC56321DDF51 /* RemindersSettingsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86957BF92A9E18DE4F64796E /* RemindersSettingsModal.swift */; };
+		9F70C907BE51C98FABCC5943 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B7C46F19DD6B31B99333C /* NotificationService.swift */; };
+		9F8F60111CFC3E3DB01C69F1 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AD7511BBA45C8FF596161 /* Statistics.swift */; };
+		9F9E7F248213D74F449ADD75 /* AnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0D961DA1A1E3FFA68EE3B /* AnalysisViewModel.swift */; };
+		AB4CC07C115E71E4635A1FD1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6CD57219628BEBBC3FC08A /* ProfileViewModel.swift */; };
+		B29FF55AA3247E8332CBC336 /* PhoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22298ACE9197703DBC05D41A /* PhoneAuthView.swift */; };
+		BEFA841AB46C238E40DF3C6B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727251538CB444CC25564112 /* WelcomeScreen.swift */; };
+		CE32F963BB866C5E860220B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D23149E1AA86BD77EB5481 /* User.swift */; };
+		D2B2B5E22BFC0473F89D4F42 /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927135221F297E91AC213EC /* DiaryViewModel.swift */; };
+		D53DB04BEDB6C96248923479 /* AddMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43FD3E349881FC5A0FFE684 /* AddMealViewModel.swift */; };
+		D80041F521D36B79C9441543 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243C5B66144402EEF8419F75 /* AuthView.swift */; };
+		E49C86B487BBC5E5A256B651 /* CalorigramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A836F1AEB07B75139C6B2A4C /* CalorigramApp.swift */; };
+		E6F77D2EECE321C2A086900E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D74AB7E29A636317E76C88 /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F935D1D59716C445A2250E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA765C993A3AFC5EE8BBA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AA197D50D9CAFA847971E3;
+			remoteInfo = Calorigram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019AD7511BBA45C8FF596161 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		041D742C6B91B77B9EED9B53 /* CalorigramTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CalorigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D767B9CCF950E1DC6DAA9FA /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		12F6C11FD97E0C50190EB2B1 /* AppleAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthView.swift; sourceTree = "<group>"; };
+		1A8F2F3BDBDEC969E2A20E23 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1BB8C5FF3A4B0422DF3CA9B0 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		22298ACE9197703DBC05D41A /* PhoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthView.swift; sourceTree = "<group>"; };
+		243C5B66144402EEF8419F75 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		2CCF5356CFCF114C63ABF027 /* AddMealModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealModal.swift; sourceTree = "<group>"; };
+		2D8A4368443C01E8D87E71F3 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		3037F0E5823E63A08733F9C0 /* Calorigram.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Calorigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E0D961DA1A1E3FFA68EE3B /* AnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewModel.swift; sourceTree = "<group>"; };
+		3A0AA18126AFF5A00180F414 /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		3CE3546993531E562E78A19E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		430B7C46F19DD6B31B99333C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4899B6AF59C8CFCF8A589AD1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4927135221F297E91AC213EC /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
+		50D23149E1AA86BD77EB5481 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		516716E569B6AC91CBC66FC1 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		61E6FC9353B89938B79E632F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		62882F18B2283895FC0CB3C6 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		6D205D4B4FCD4241890255AE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		727251538CB444CC25564112 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		7B12756B55CB7B59FA958129 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7F6CD57219628BEBBC3FC08A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		86957BF92A9E18DE4F64796E /* RemindersSettingsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersSettingsModal.swift; sourceTree = "<group>"; };
+		9D8F83EBCE02B17AE47D8509 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		A031B9B3DD68D33CDC48A600 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		A836F1AEB07B75139C6B2A4C /* CalorigramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorigramApp.swift; sourceTree = "<group>"; };
+		ACCA90B2C81D826643818442 /* EmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthView.swift; sourceTree = "<group>"; };
+		B2EA9E10DE5AE0FFC47908E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C003171EC86BEB3CE12A2553 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		C62F2BAD4F0F5011AB00BEE6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C8231F00ACB2BCF16EB7F239 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D43FD3E349881FC5A0FFE684 /* AddMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewModel.swift; sourceTree = "<group>"; };
+		E05D59776C716E811FFCA42A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		F108D6B83A52D7C67EFAB3C1 /* AppleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthService.swift; sourceTree = "<group>"; };
+		F8D74AB7E29A636317E76C88 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FF4C38EF10AB41570699F1B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1110889E9A2C7BC51B29EF3A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D43FD3E349881FC5A0FFE684 /* AddMealViewModel.swift */,
+				30E0D961DA1A1E3FFA68EE3B /* AnalysisViewModel.swift */,
+				C8231F00ACB2BCF16EB7F239 /* AuthViewModel.swift */,
+				4927135221F297E91AC213EC /* DiaryViewModel.swift */,
+				61E6FC9353B89938B79E632F /* HomeViewModel.swift */,
+				7F6CD57219628BEBBC3FC08A /* ProfileViewModel.swift */,
+				0D767B9CCF950E1DC6DAA9FA /* StatsViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Calorigram/ViewModels;
+			sourceTree = "<group>";
+		};
+		1FF2C56724F8B30E9A81B905 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				62882F18B2283895FC0CB3C6 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		25594CC316EDB0415570F761 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				9D8F83EBCE02B17AE47D8509 /* DiaryView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		2F966248CA4B0155973E64DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				516716E569B6AC91CBC66FC1 /* MainTabView.swift */,
+				6D1AA210DB0555883E058120 /* Analysis */,
+				50CAAEDF1FEA154BF18B5454 /* Auth */,
+				25594CC316EDB0415570F761 /* Diary */,
+				B07AD679CD5F66BEDBF9D5DD /* Home */,
+				45DE0474990EE0538FA5C77C /* Modals */,
+				B1DB3CE1E876F07131C2F1A1 /* Onboarding */,
+				901EFE5831A86FBF63D53CE4 /* Profile */,
+				1FF2C56724F8B30E9A81B905 /* Stats */,
+				AECFC84ED44983FDE132BC73 /* Welcome */,
+			);
+			name = Views;
+			path = Calorigram/Views;
+			sourceTree = "<group>";
+		};
+		45DE0474990EE0538FA5C77C /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				2CCF5356CFCF114C63ABF027 /* AddMealModal.swift */,
+				86957BF92A9E18DE4F64796E /* RemindersSettingsModal.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		486CDB5C0D9CB6E8FB6DD776 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A836F1AEB07B75139C6B2A4C /* CalorigramApp.swift */,
+				B2EA9E10DE5AE0FFC47908E3 /* ContentView.swift */,
+			);
+			name = App;
+			path = Calorigram/App;
+			sourceTree = "<group>";
+		};
+		491B7D1CFD9CE6A518113211 = {
+			isa = PBXGroup;
+			children = (
+				486CDB5C0D9CB6E8FB6DD776 /* App */,
+				C4B6577528742025BC9E4767 /* CalorigramTests */,
+				D3E73C810E4A58D777E82134 /* Models */,
+				618663204C8434DD789606D1 /* Services */,
+				DF8375844798B36A69A7AB98 /* Utils */,
+				1110889E9A2C7BC51B29EF3A /* ViewModels */,
+				2F966248CA4B0155973E64DE /* Views */,
+				C853F2B397550C2E684819EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50CAAEDF1FEA154BF18B5454 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				12F6C11FD97E0C50190EB2B1 /* AppleAuthView.swift */,
+				243C5B66144402EEF8419F75 /* AuthView.swift */,
+				ACCA90B2C81D826643818442 /* EmailAuthView.swift */,
+				22298ACE9197703DBC05D41A /* PhoneAuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		618663204C8434DD789606D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3546993531E562E78A19E /* APIService.swift */,
+				F108D6B83A52D7C67EFAB3C1 /* AppleAuthService.swift */,
+				C62F2BAD4F0F5011AB00BEE6 /* AuthService.swift */,
+				C003171EC86BEB3CE12A2553 /* KeychainService.swift */,
+				430B7C46F19DD6B31B99333C /* NotificationService.swift */,
+			);
+			name = Services;
+			path = Calorigram/Services;
+			sourceTree = "<group>";
+		};
+		6D1AA210DB0555883E058120 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4368443C01E8D87E71F3 /* AnalysisView.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		901EFE5831A86FBF63D53CE4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6D205D4B4FCD4241890255AE /* EditProfileView.swift */,
+				F8D74AB7E29A636317E76C88 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AECFC84ED44983FDE132BC73 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				727251538CB444CC25564112 /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B07AD679CD5F66BEDBF9D5DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C38EF10AB41570699F1B3 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B1DB3CE1E876F07131C2F1A1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1A8F2F3BDBDEC969E2A20E23 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C4B6577528742025BC9E4767 /* CalorigramTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A0AA18126AFF5A00180F414 /* APIServiceTests.swift */,
+				A031B9B3DD68D33CDC48A600 /* HomeViewModelTests.swift */,
+			);
+			path = CalorigramTests;
+			sourceTree = "<group>";
+		};
+		C853F2B397550C2E684819EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3037F0E5823E63A08733F9C0 /* Calorigram.app */,
+				041D742C6B91B77B9EED9B53 /* CalorigramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E73C810E4A58D777E82134 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E05D59776C716E811FFCA42A /* Meal.swift */,
+				019AD7511BBA45C8FF596161 /* Statistics.swift */,
+				1BB8C5FF3A4B0422DF3CA9B0 /* Subscription.swift */,
+				50D23149E1AA86BD77EB5481 /* User.swift */,
+			);
+			name = Models;
+			path = Calorigram/Models;
+			sourceTree = "<group>";
+		};
+		DF8375844798B36A69A7AB98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4899B6AF59C8CFCF8A589AD1 /* Constants.swift */,
+				7B12756B55CB7B59FA958129 /* Extensions.swift */,
+			);
+			name = Utils;
+			path = Calorigram/Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54AA197D50D9CAFA847971E3 /* Calorigram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCE0941184DCEE7560C6079 /* Build configuration list for PBXNativeTarget "Calorigram" */;
+			buildPhases = (
+				36CB0CE8043C6D952EB8C32C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calorigram;
+			packageProductDependencies = (
+			);
+			productName = Calorigram;
+			productReference = 3037F0E5823E63A08733F9C0 /* Calorigram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62C9472066A5D99D65159BF2 /* CalorigramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC17C59C4BF0752C88B7FB8 /* Build configuration list for PBXNativeTarget "CalorigramTests" */;
+			buildPhases = (
+				C327D57D627986BB8290F0AF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99E33AC23F36C64B84C6C38 /* PBXTargetDependency */,
+			);
+			name = CalorigramTests;
+			packageProductDependencies = (
+			);
+			productName = CalorigramTests;
+			productReference = 041D742C6B91B77B9EED9B53 /* CalorigramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEA765C993A3AFC5EE8BBA73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					54AA197D50D9CAFA847971E3 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6FDBF4546C811E2DFB38878C /* Build configuration list for PBXProject "Calorigram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ru,
+			);
+			mainGroup = 491B7D1CFD9CE6A518113211;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54AA197D50D9CAFA847971E3 /* Calorigram */,
+				62C9472066A5D99D65159BF2 /* CalorigramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36CB0CE8043C6D952EB8C32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1BA20CEF635A080A08772D /* APIService.swift in Sources */,
+				8CCBE00D63EAEAE6D9574E78 /* AddMealModal.swift in Sources */,
+				D53DB04BEDB6C96248923479 /* AddMealViewModel.swift in Sources */,
+				48FD74A6CD55010EEA591462 /* AnalysisView.swift in Sources */,
+				9F9E7F248213D74F449ADD75 /* AnalysisViewModel.swift in Sources */,
+				23BF05316DFDDCCFACE85FD7 /* AppleAuthService.swift in Sources */,
+				61D8B2258F11B39139D67884 /* AppleAuthView.swift in Sources */,
+				019296340F364623F7F0EAB4 /* AuthService.swift in Sources */,
+				D80041F521D36B79C9441543 /* AuthView.swift in Sources */,
+				6B94B7070F5436587C0F4724 /* AuthViewModel.swift in Sources */,
+				E49C86B487BBC5E5A256B651 /* CalorigramApp.swift in Sources */,
+				028A24DC263685E1C0E07F86 /* Constants.swift in Sources */,
+				0221B69176EA53A8E2CF3CE6 /* ContentView.swift in Sources */,
+				344EC87CF2A4A28ACA6F8887 /* DiaryView.swift in Sources */,
+				D2B2B5E22BFC0473F89D4F42 /* DiaryViewModel.swift in Sources */,
+				180C8EC9AD50B0EE7EF76A6E /* EditProfileView.swift in Sources */,
+				48813FAE30526B1AABE0407B /* EmailAuthView.swift in Sources */,
+				72EFD903E7760CD8AECEBA6E /* Extensions.swift in Sources */,
+				81CE15409B700C8DC24F9C9D /* HomeView.swift in Sources */,
+				2B1C899FAC18AFA97B228EA6 /* HomeViewModel.swift in Sources */,
+				926FB4893B7716C753CA35BE /* KeychainService.swift in Sources */,
+				63A6612561C615F3C3111FA6 /* MainTabView.swift in Sources */,
+				14A34CE13A3A1E60C2C95947 /* Meal.swift in Sources */,
+				9F70C907BE51C98FABCC5943 /* NotificationService.swift in Sources */,
+				654A2CD2DAFDF5CDECBA7252 /* OnboardingView.swift in Sources */,
+				B29FF55AA3247E8332CBC336 /* PhoneAuthView.swift in Sources */,
+				E6F77D2EECE321C2A086900E /* ProfileView.swift in Sources */,
+				AB4CC07C115E71E4635A1FD1 /* ProfileViewModel.swift in Sources */,
+				9A56A542AE27AC56321DDF51 /* RemindersSettingsModal.swift in Sources */,
+				9F8F60111CFC3E3DB01C69F1 /* Statistics.swift in Sources */,
+				107CD9B901B6614327D3D38A /* StatsView.swift in Sources */,
+				5125B2008AFB02A00D260982 /* StatsViewModel.swift in Sources */,
+				62FB6EE50082FDDB6677477E /* Subscription.swift in Sources */,
+				CE32F963BB866C5E860220B5 /* User.swift in Sources */,
+				BEFA841AB46C238E40DF3C6B /* WelcomeScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C327D57D627986BB8290F0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0E30183B77BEE87DCD68D9 /* APIServiceTests.swift in Sources */,
+				73B5979F0F280BE1C4F9A6DD /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99E33AC23F36C64B84C6C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AA197D50D9CAFA847971E3 /* Calorigram */;
+			targetProxy = F935D1D59716C445A2250E74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D6FA75E8A78D1BE113F5825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		68307DB3749595B0D9CCEDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calorigram.appTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorigram.app/Calorigram";
+			};
+			name = Debug;
+		};
+		8712BF3056F8A068F0B55C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calorigram.Calorigram;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99C58F587CC2C62B4B5A4D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C49014FA816A056EE5B5EDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calorigram.Calorigram;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF9E5618C04E03A36204770B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calorigram.appTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorigram.app/Calorigram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCE0941184DCEE7560C6079 /* Build configuration list for PBXNativeTarget "Calorigram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49014FA816A056EE5B5EDA6 /* Debug */,
+				8712BF3056F8A068F0B55C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6FDBF4546C811E2DFB38878C /* Build configuration list for PBXProject "Calorigram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D6FA75E8A78D1BE113F5825 /* Debug */,
+				99C58F587CC2C62B4B5A4D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CEC17C59C4BF0752C88B7FB8 /* Build configuration list for PBXNativeTarget "CalorigramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68307DB3749595B0D9CCEDCE /* Debug */,
+				FF9E5618C04E03A36204770B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEA765C993A3AFC5EE8BBA73 /* Project object */;
+}
