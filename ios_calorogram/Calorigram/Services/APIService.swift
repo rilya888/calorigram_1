@@ -14,6 +14,8 @@ enum APIError: Error, LocalizedError {
     case serverError(Int, String)
     case unauthorized
     case networkError(Error)
+    case timeout
+    case unknown
     
     var errorDescription: String? {
         switch self {
@@ -42,6 +44,10 @@ enum APIError: Error, LocalizedError {
             return "Необходима авторизация"
         case .networkError(let error):
             return "Ошибка сети: \(error.localizedDescription)"
+        case .timeout:
+            return "Превышено время ожидания ответа"
+        case .unknown:
+            return "Неизвестная ошибка"
         }
     }
 }
@@ -181,7 +187,19 @@ class APIService {
                 
                 // Если это последняя попытка, выбрасываем ошибку
                 if attempt == maxRetries - 1 {
-                    throw APIError.networkError(error)
+                    // Специальная обработка для определенных типов ошибок
+                    if let urlError = error as? URLError {
+                        switch urlError.code {
+                        case .timedOut:
+                            throw APIError.timeout
+                        case .notConnectedToInternet, .networkConnectionLost, .cannotConnectToHost:
+                            throw APIError.networkError(error)
+                        default:
+                            throw APIError.unknown
+                        }
+                    } else {
+                        throw APIError.networkError(error)
+                    }
                 }
                 
                 // Ждем перед следующей попыткой
