@@ -132,10 +132,22 @@ class AuthViewModel: ObservableObject {
             print("❌ Registration error: \(error)")
             if let apiError = error as? APIError {
                 // Улучшаем сообщение об ошибке для пользователя
-                if case .serverError(_, let message) = apiError {
-                    // Проверяем, не является ли это ошибкой "email already registered"
-                    if message.contains("already registered") || message.contains("уже зарегистрирован") {
-                        errorMessage = "Этот email уже зарегистрирован. Попробуйте войти."
+                if case .serverError(let code, let message) = apiError {
+                    if code == 400 {
+                        // Извлекаем понятное сообщение из ответа сервера
+                        if message.contains("Invalid input data") {
+                            if message.contains("email") && message.contains("not a valid email") {
+                                errorMessage = "Введите корректный email адрес"
+                            } else if message.contains("required") {
+                                errorMessage = "Заполните все обязательные поля"
+                            } else {
+                                errorMessage = "Неверные данные. Проверьте введенную информацию."
+                            }
+                        } else if message.contains("already registered") || message.contains("уже зарегистрирован") {
+                            errorMessage = "Этот email уже зарегистрирован. Попробуйте войти."
+                        } else {
+                            errorMessage = message
+                        }
                     } else {
                         errorMessage = apiError.errorDescription
                     }
