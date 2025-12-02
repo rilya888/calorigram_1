@@ -57,6 +57,14 @@ class AuthViewModel: ObservableObject {
             var shouldLogout = false
 
             switch apiError {
+            case .invalidURL:
+                print("🔗 Invalid URL")
+                shouldLogout = true
+
+            case .noData:
+                print("📄 No data received")
+                shouldLogout = true
+
             case .unauthorized:
                 print("🚪 Token expired or invalid")
                 shouldLogout = true
