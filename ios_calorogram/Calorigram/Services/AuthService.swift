@@ -17,7 +17,7 @@ class AuthService {
     
     // MARK: - Email/Password Auth
     
-    func register(email: String, password: String, name: String) async throws -> AuthResponse {
+    func register(email: String, password: String, name: String?) async throws -> AuthResponse {
         let request = RegisterRequest(email: email, password: password, name: name)
         let response: AuthResponse = try await apiService.request(
             endpoint: Constants.API.register,

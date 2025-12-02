@@ -115,13 +115,13 @@ class AuthViewModel: ObservableObject {
     
     // MARK: - Email/Password Auth
     
-    func register(email: String, password: String, name: String) async {
+    func register(email: String, password: String) async {
         isLoading = true
         errorMessage = nil
         
         do {
             print("📝 Starting registration for email: \(email)")
-            let response = try await authService.register(email: email, password: password, name: name)
+            let response = try await authService.register(email: email, password: password, name: nil)
             print("✅ Registration successful, user ID: \(response.user.id)")
             currentUser = response.user
             isAuthenticated = true

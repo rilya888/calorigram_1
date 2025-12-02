@@ -66,7 +66,7 @@ struct AuthResponse: Codable {
 struct RegisterRequest: Codable {
     let email: String
     let password: String
-    let name: String
+    let name: String?
 }
 
 struct LoginRequest: Codable {

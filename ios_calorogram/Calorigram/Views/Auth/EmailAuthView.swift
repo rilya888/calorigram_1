@@ -12,7 +12,6 @@ struct EmailAuthView: View {
     @Binding var isLoginMode: Bool
     @State private var email = ""
     @State private var password = ""
-    @State private var name = ""
 
     // Проверка валидности email
     private var isEmailValid: Bool {
@@ -25,12 +24,6 @@ struct EmailAuthView: View {
         VStack(spacing: 20) {
             // Поля ввода
             VStack(spacing: 15) {
-                if !isLoginMode {
-                    TextField("Имя", text: $name)
-                        .textFieldStyle(.roundedBorder)
-                        .autocapitalization(.words)
-                }
-                
                 TextField("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.emailAddress)
@@ -52,11 +45,6 @@ struct EmailAuthView: View {
                         .foregroundColor(.red)
                         .font(.caption)
                 }
-                if !isLoginMode && !name.isEmpty && name.count < 2 {
-                    Text("Имя должно содержать минимум 2 символа")
-                        .foregroundColor(.red)
-                        .font(.caption)
-                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 20)
@@ -67,7 +55,7 @@ struct EmailAuthView: View {
                     if isLoginMode {
                         await authViewModel.login(email: email, password: password)
                     } else {
-                        await authViewModel.register(email: email, password: password, name: name)
+                        await authViewModel.register(email: email, password: password)
                     }
                 }
             }) {
@@ -82,7 +70,7 @@ struct EmailAuthView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            .disabled(authViewModel.isLoading || !isEmailValid || password.count < 6 || (!isLoginMode && name.count < 2))
+            .disabled(authViewModel.isLoading || !isEmailValid || password.count < 6)
             
             // Ошибка
             if let errorMessage = authViewModel.errorMessage {
